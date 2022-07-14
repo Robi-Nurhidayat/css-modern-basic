@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accrodion Components</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /*
+        SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+        FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+        */
+
+      /* 
+        MAIN COLOR: #087f5b
+        GREY COLOR: #343a40
+        */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        background-color: #cfd2cf;
+      }
+
+      .accordion {
+        width: 700px;
+        margin: 100px auto;
+        background-color: #fff;
+        padding: 20px 50px;
+        border-radius: 1px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+        border-top: 5px solid #087f5b;
+      }
+
+      .accordion-header {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        font-weight: 500;
+        color: #087f5b;
+        margin-bottom: 30px;
+      }
+
+      .header-text {
+        flex: 1;
+        margin-left: 20px;
+      }
+
+      .accordion-text {
+        width: 500px;
+        margin: auto;
+      }
+
+      .accordion-text p {
+        font-size: 14px;
+        color: #343a40;
+        letter-spacing: 0px;
+        line-height: 1.4;
+      }
+
+      .accordion-text-list {
+        padding-left: 17px;
+        margin-top: 20px;
+        color: gray;
+        font-size: 16px;
+      }
+
+      .accordion-text-list li {
+        margin-bottom: 8px;
+      }
+
+      .accordion-text-list li:last-child {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="accordion-header">
+        <div class="header-number">02</div>
+        <div class="header-text">How long do I have to return my chair?</div>
+        <div class="header-symbol">&#8595;</div>
+      </div>
+      <div class="accordion-text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat fuga
+          iste natus ab, molestias consequuntur ipsa, architecto, nam minima
+          harum dignissimos tempora molestiae! Veritatis ducimus iste hic esse
+          inventore modi.
+        </p>
+        <ul class="accordion-text-list">
+          <li>Debating me breeding be answered an he</li>
+          <li>woman which no is world miles woody</li>
+          <li>Do greatest at in learning steepest</li>
+          <li>Lose john poor same it case do year we</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
